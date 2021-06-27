@@ -41,6 +41,7 @@ jobs:
       run: |
         python tests/debug_print.py
         python tests/debug_jax.py
+        python tests/debug_print.py
 
     - name: Test with pytest
       run: |
