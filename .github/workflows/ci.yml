@@ -36,6 +36,11 @@ jobs:
     - name: List installed Python packages
       run: |
         python -m pip list
+
+    - name: JAX debug
+      run: |
+        python tests/debug_digest.py
+
     - name: Test with pytest
       run: |
         python -m pytest -r sx --ignore tests/benchmarks/ --ignore tests/contrib --ignore tests/test_notebooks.py
